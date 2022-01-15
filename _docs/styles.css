@@ -1,0 +1,370 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #66e2dc;
+  --orange: #fa7453;
+  --yellow: #ffb964;
+  --text-white: #fcfaf9;
+  --black: #191826;
+}
+
+body {
+  background-image: url(assets/bg-main-desktop.png);
+  background-position: -300px -300px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+  font-size: 5.5rem;
+  letter-spacing: -1px;
+  line-height: 5.5rem;
+  margin-right: 15vw;
+  margin-top: 7.9rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  margin-bottom: 100px;
+  margin-top: 200px;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 33%;
+}
+
+li {
+  display: inline;
+}
+
+li:nth-of-type(2),
+li:nth-of-type(3) {
+  margin-left: 1.25rem;
+}
+
+.content-body {
+  margin: 0 10%;
+}
+
+.logo-header {
+  margin-top: 3.875rem;
+}
+
+.bg-pattern-big {
+  right: 0;
+  height: 468px;
+  position: absolute;
+  top: -35px;
+  width: 312px;
+}
+
+.main-text {
+  color: var(--black);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-right: 20vw;
+  margin-top: 2.5rem;
+}
+
+.card-bg {
+  background: var(--black);
+  border-radius: 0.75rem;
+  height: 600px;
+  margin-top: 321px;
+  position: relative;
+  width: 100%;
+}
+
+.illustrations-box {
+  bottom: 30%;
+  left: 10%;
+  position: absolute;
+}
+
+.phone-image {
+  position: relative;
+  width: 312px;
+  z-index: 2;
+}
+
+.bg-pattern-small {
+  bottom: 4px;
+  left: 232px;
+  position: absolute;
+}
+
+.card {
+  background: var(--orange);
+  border-radius: 0.75rem;
+  color: var(--text-white);
+  height: 625px;
+  padding: 3rem 3.375rem;
+  position: absolute;
+  right: 8.5%;
+  top: 15%;
+  width: 446px;
+  z-index: 5;
+}
+
+.card-text {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  margin-top: 2rem;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.month {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+.ios {
+  background: var(--black);
+  color: var(--text-white);
+  margin-top: 2.5rem;
+  transition: all 200ms ease-in-out;
+}
+
+.ios:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+.ios-icon {
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.ios-text {
+  vertical-align: middle;
+}
+
+.android {
+  background: var(--text-white);
+  color: var(--black);
+  margin-top: 2rem;
+  transition: all 200ms ease-in-out;
+}
+
+.android:hover {
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+.android-icon {
+  vertical-align: middle;
+}
+
+.android-text {
+  vertical-align: middle;
+}
+
+.footer-logo-box {
+  width: 33%;
+}
+
+.footer-text {
+  width: 33%;
+}
+
+.email {
+  font-weight: 700;
+}
+
+.facebook-logo,
+.instagram-logo,
+.twitter-logo {
+  transition: all 200ms ease-in-out;
+}
+
+.facebook-logo:hover,
+.instagram-logo:hover,
+.twitter-logo:hover {
+  cursor: pointer;
+  filter: invert(57%) sepia(41%) saturate(2574%) hue-rotate(328deg)
+    brightness(104%) contrast(96%);
+}
+
+@media (max-width: 1150px) {
+  body {
+    background-image: url(assets/bg-main-tablet.png);
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-right: 25vw;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    width: 50%;
+  }
+
+  .content-body {
+    margin: 0 5%;
+  }
+
+  .bg-pattern-big {
+    right: -40px;
+    height: 400px;
+    top: -35px;
+    width: 267px;
+  }
+
+  .main-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 1.75rem;
+  }
+
+  .card-bg {
+    margin-top: 249px;
+  }
+
+  .phone-image {
+    width: 270px;
+  }
+
+  .bg-pattern-small {
+    bottom: 30px;
+    height: 420px;
+    left: 165px;
+    width: 280px;
+  }
+
+  .card {
+    height: 546px;
+    padding: 3rem;
+    top: 25%;
+    width: 399px;
+  }
+
+  .card-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .android {
+    margin-top: 1rem;
+  }
+
+  .footer-logo-box {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .footer-text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url(assets/bg-main-mobile.png);
+    background-position: -250px -250px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-right: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 450px;
+  }
+
+  ul {
+    align-self: flex-start;
+    margin-top: 4rem;
+    width: auto;
+  }
+
+  .bg-pattern-big {
+    opacity: 0;
+  }
+
+  .main-text {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-top: 1.25rem;
+  }
+
+  .card-bg {
+    margin-left: -5vw;
+    margin-top: 166px;
+    width: 100vw;
+  }
+
+  .illustrations-box {
+    bottom: 45%;
+    left: 25%;
+  }
+
+  .phone-image {
+    width: 209px;
+  }
+
+  .bg-pattern-small {
+    bottom: -90px;
+    left: -33px;
+  }
+
+  .card {
+    padding: 3rem 2.25rem;
+    right: 0;
+    top: 380px;
+    width: 100%;
+  }
+
+  .footer-logo-box {
+    margin-bottom: 2rem;
+  }
+
+  .footer-text {
+    width: 100%;
+  }
+}
